@@ -1,7 +1,7 @@
-import workspaces.playground.application.applicationLogic.TaskManager;
-import workspaces.playground.application.applicationLogic.FileManager;
-import workspaces.playground.application.userInterface.userCLI;
+import applcationlogic.FileManager;
+import applicationlogic.TaskManager;
 import java.util.Scanner;
+import userinterface.userCLI;
 
 public class TaskTracker{
     public static void main(String[] args){

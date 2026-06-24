@@ -1,8 +1,8 @@
-package workspaces.playground.application.userInterface;
+package userinterface;
 
+import applicationlogic.FileManager;
+import applicationlogic.TaskManager;
 import java.util.Scanner;
-import workspaces.playground.application.applicationLogic.TaskManager;
-import workspaces.playground.application.applicationLogic.FileManager;
 
 public class userCLI{
     private Scanner scanner;

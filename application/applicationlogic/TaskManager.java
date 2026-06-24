@@ -1,7 +1,7 @@
-package workspaces.playground.application.applicationLogic;
+package applicationlogic;
 
-import workspaces.playground.application.domain.Task;
-import workspaces.playground.application.Domain.Status;
+import domain.Task;
+import domain.Status;
 import java.util.HashMap;
 
 public class TaskManager{

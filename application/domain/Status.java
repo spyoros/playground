@@ -1,4 +1,4 @@
-package workspaces.playground.application.domain;
+package domain;
 
 public enum Status{
     TODO,

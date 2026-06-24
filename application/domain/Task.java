@@ -1,14 +1,18 @@
-package workspaces.playground.application.domain;
+package domain;
 
-import workspaces.playground.application.domain.Status;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Task{
+    public enum Status {
+        TODO,
+        IN_PROGRESS,
+        DONE
+    }
     private String id;
     private String description;
     private Status status;
-    private LocalDateTime createdAt;
+    final LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     
     public Task(String description, String id){
@@ -19,6 +23,7 @@ public class Task{
         updatedAt = LocalDateTime.now();
     }
     
+    @Override
     public String toString(){
         return "ID: " + id
             + "\nStatus: " + status
@@ -57,6 +62,7 @@ public class Task{
         this.id = id;
     }
     
+    @Override
     public boolean equals(Object object){
         if(object == null){
             return false;
@@ -73,5 +79,10 @@ public class Task{
         Task compared = (Task) object;
         
         return Objects.equals(id, compared.id);
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(id);
     }
 }
